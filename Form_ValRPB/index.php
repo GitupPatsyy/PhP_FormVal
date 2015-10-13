@@ -37,6 +37,7 @@ if (!isset($formdata)) {
         <title>Form ValidRPB</title>
         <style>
             div.container {
+                width: 100%;
                 margin: auto;
 
             }
