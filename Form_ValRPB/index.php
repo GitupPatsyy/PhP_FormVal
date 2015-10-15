@@ -114,14 +114,15 @@ if (!isset($formdata)) {
                             </div>
                             <div class="errors">
                                 <span id="dobError">
-                                    <?php if(isset($errors['dob']))
+                                    <?php
+                                    if (isset($errors['dob']))
                                         echo $errors['dob'];
                                     ?>
                                 </span>
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Radio Buttons -->
                     <div class="row">
                         <div class="label">
@@ -143,7 +144,19 @@ if (!isset($formdata)) {
                             </div>
                         </div>
                     </div>
+                    <!--Select Box-->
+                    <div class="row">
+                        <label>Game Informer</label>
+                    </div>
+                    <div class="control"> 
+                        <select id="informer" name="informer[]" multiple="multiple">
+                            <option value="IGN">IGN</option>
+                            <option value="Gamespot">Gamespot</option>
+                            <option value="dtoid">DTOID</option>
+                            <option value="Machinima">Machinima</option>
+                        </select>
 
+                    </div>
                     <!-- Games Array -->
                     <div class="row">
                         <div class="label">
